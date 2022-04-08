@@ -1,0 +1,51 @@
+.started {
+    max-width: 900px;
+    margin: 100px auto 70px;
+    border-radius: 20px;
+    background-color: #f9f8f8;
+    padding: 60px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    *:not(img) {
+        position: relative;
+        z-index: 2;
+    }
+    &-heading {
+        margin-bottom: 30px;
+    }
+
+    &-desc {
+        min-width: 245px;
+        margin-bottom: 50px;
+        color: $gray;
+    }
+
+    &-caption {
+        margin-bottom: 20px;
+    }
+
+    &-comment {
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+
+    }
+
+    &-smile {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(50%, -50%);
+    }
+    @media screen and (max-width: 767.98px) {
+        margin-top: 20px;
+        &-smile, &-comment {
+            max-width: 20%;
+            transform: none;
+        }
+    }
+    
+}
